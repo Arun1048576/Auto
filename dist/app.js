@@ -31357,11 +31357,20 @@ var FlowBasedAPIContent = function (_React$Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        { className: 'standalone-api section-content' },
+        { className: 'coming-soon-container' },
         _react2.default.createElement(
           'div',
-          { className: 'content-header' },
-          'Flow Based APIs'
+          { className: 'coming-soon' },
+          _react2.default.createElement(
+            'div',
+            { className: 'title' },
+            'Coming Soon'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'subtitle' },
+            'Watch out this space for some amazing new stuff !'
+          )
         )
       );
     }
