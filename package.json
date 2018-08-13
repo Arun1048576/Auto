@@ -4,7 +4,7 @@
   "description": "An API testing framework",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && node server/index.js",
+    "start": "npm install && node index.js",
     "dev": "nodemon --inspect index.js",
     "build": "webpack --watch --info-verbosity verbose --config ./webpack.config.js"
   },
