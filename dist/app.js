@@ -30442,7 +30442,7 @@ var APIItem = function (_React$Component2) {
     var _this3 = _possibleConstructorReturn(this, (APIItem.__proto__ || Object.getPrototypeOf(APIItem)).call(this, props));
 
     _this3.state = {
-      open: true
+      open: false
     };
     _this3.toggleItem = _this3.toggleItem.bind(_this3);
     _this3.runTest = _this3.runTest.bind(_this3);

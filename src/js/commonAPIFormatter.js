@@ -46,7 +46,7 @@ class APIItem extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      open: true
+      open: false
     }
     this.toggleItem = this.toggleItem.bind(this)
     this.runTest = this.runTest.bind(this)
