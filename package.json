@@ -8,6 +8,9 @@
     "dev": "nodemon --inspect index.js",
     "build": "webpack --watch --info-verbosity verbose --config ./webpack.config.js"
   },
+  "engines": {
+    "node": "8.9.4"
+  },
   "author": "Sanjay Chaudhari",
   "license": "ISC",
   "dependencies": {
