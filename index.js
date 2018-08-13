@@ -10,10 +10,12 @@ app.set('view engine', 'pug')
 
 app.use(express.static('dist'))      // use dist/app.js for render
 
-app.get('/', function(req, res) {
+app.get('/*', function(req, res) {
   res.render('index')
 })
 
-app.listen(4000, ()=> {
-  console.log("Server started at 4000")
+const port = (process.env.PORT || 2000)
+
+app.listen(port, ()=> {
+  console.log("Server started at", port)
 })

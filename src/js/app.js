@@ -1,15 +1,16 @@
-  import React from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 
-import Header from './header'
-import APIStructureTester from './main'
+import AppContent from './app-content'
+import Sidebar from './sidebar'
 
 class App extends React.Component {
   render () {
     return (
-      <div>
-        <Header />
-        <APIStructureTester apiMeta={this.props.apiMeta} />
+      <div className='main'>
+        <Sidebar />
+        <AppContent />
       </div>
     )
   }
@@ -21,4 +22,4 @@ const mapStateToProps = (store) => {
   }
 }
 
-export default connect(mapStateToProps)(App)
+export default withRouter(connect(mapStateToProps)(App))

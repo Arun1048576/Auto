@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
@@ -13,11 +14,13 @@ const reducerEnhancer = (typeof window != 'undefined' && window.devToolsExtensio
 const initialReducer = reducerCreator({}, reducers)
 
 function onLoad () {
-  const store = createStore(initialReducer, window._state, reducerEnhancer)
+  const store = createStore(initialReducer, {}, reducerEnhancer)
 
   ReactDOM.render(
     <Provider store={store}>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </Provider>,
     document.getElementById('main-content')
   )
